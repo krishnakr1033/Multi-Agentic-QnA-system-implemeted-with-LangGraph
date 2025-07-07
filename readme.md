@@ -25,13 +25,13 @@ pip install -r requirements.txt
 Create a **.env** file in the root directory.
 
 ```bash
-LANGCHAIN_TRACING_V2=true
-LANGSMITH_ENDPOINT=https://api.smith.langchain.com
-LANGSMITH_API_KEY=lsv2_pt_.................................
-LANGSMITH_PROJECT=google-search-agent
-GOOGLE_CSE_ID=...................."
-GOOGLE_API_KEY = AIzaSy.......................
-GROQ_API_KEY=gsk_..............................................................
+LANGCHAIN_TRACING_V2 = true
+LANGSMITH_ENDPOINT = https://api.smith.langchain.com
+LANGSMITH_API_KEY = .................................
+LANGSMITH_PROJECT = google-search-agent
+GOOGLE_CSE_ID = ....................
+GOOGLE_API_KEY = .......................
+GROQ_API_KEY = ..............................................................
 ```
 ### 3. Lauch the Application
 Run the following command to start the application:
@@ -76,32 +76,32 @@ This application utilizes a modular, agent-based architecture powered by **LangG
 
 ## Streamlit Based Interfaces
 
-![Screenshot](images\image2.png)
-![Screenshot](images\image3.png)
+![Screenshot](images/image2.png)
+![Screenshot](images/image3.png)
 
 
 ## LangSmith Tracing of Notes
-![Screenshot](images\image1.png)
+![Screenshot](images/image1.png)
 Tracking Each activity through LangGraph system
 
 ---
 
-![Screenshot](images\image6.png)
+![Screenshot](images/image6.png)
 The side bar showing the nodes visited in Langgraph, in the main body, its showing the input, then its response is "Answer", "Scrapped Pages" contains list of content from top five webpage link searched, "Similar Query" showing false means that similar query were not found in FAISS vector db, "valid" showing true means query is searchable.
 
 ---
 
-![Screenshot](images\image7.png)
+![Screenshot](images/image7.png)
 Here the similar query found in the memory as in the above image case it was stored in memory, so its flow through nodes are different, here scrapping not done, so "scrapped pages" is [.. empty.. ] 
 
 ---
 
-![Screenshot](images\image4.png)
+![Screenshot](images/image4.png)
 This is when asked about japan, it now don't have similar query, so its visit through "scraper" node and have scrapped content after triggering websearch node, therfore the "similar query" is false here.
 
 ---
 
-![Screenshot](images\image5.png)
+![Screenshot](images/image5.png)
 Upons passing the same query, now it reflected answer/response through memory seaching, not triggered the web searching.
 
 ---
