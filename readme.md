@@ -80,7 +80,7 @@ This application utilizes a modular, agent-based architecture powered by **LangG
 ![Screenshot](images/image3.png)
 
 
-## LangSmith Tracing of Notes
+## LangSmith Tracing of Nodes
 ![Screenshot](images/image1.png)
 Tracking Each activity through LangGraph system
 
